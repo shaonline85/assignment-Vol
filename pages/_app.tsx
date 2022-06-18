@@ -1,12 +1,17 @@
-import { HelloWorld } from "../src/components/HelloWorld";
 import "../public/css/styles.css";
-import React from "react";
+import Layout from "../src/components/Layout";
+import { StyleProvider, ThemePicker } from "vcc-ui";
+import type { AppProps } from "next/app";
 
-function HomePage() {
+function HomePage({ Component, pageProps }: AppProps) {
   return (
-    <React.StrictMode>
-      <HelloWorld />
-    </React.StrictMode>
+    <StyleProvider>
+      <ThemePicker variant="light">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemePicker>
+    </StyleProvider>
   );
 }
 
