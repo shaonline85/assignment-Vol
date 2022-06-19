@@ -7,20 +7,18 @@ const FooterContainer = styled.div`
   align-items: center;
   background-color: #f1f1f1;
   width: 100%;
-  height: 150px;
-  position: fixed;
-  bottom: 0;
+  height: 150px;  
 `;
 
 export default function Footer() {
   return (
-    <FooterContainer>
-      <footer>
+    <footer>
+      <FooterContainer>
         <Text variant="bates">
           Copyright © 2022 Volvo Car Corporation (eller dess
           dotterbolag/licensgivare).
         </Text>
-      </footer>
-    </FooterContainer>
+      </FooterContainer>
+    </footer>
   );
 }

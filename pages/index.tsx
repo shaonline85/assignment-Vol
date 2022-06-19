@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FavIcons } from "@volvo-cars/favicons/react";
 import { CardList } from "../src/components/CardList";
 import { CardType } from "../src/types";
+import { TextInput } from "vcc-ui";
 
 export interface Vehicle {
   cars: CardType[];
@@ -16,11 +17,11 @@ const SearchBoxContainer = styled.div`
 `;
 
 const StyledTextInput = styled.div`
-  input {   
-    width: 100%;        
+  input {
+    width: 100%;
     border: 1px solid #d5d5d5;
     border-radius: 4px;
-    padding: 20px 15px 20px 15px;    
+    padding: 20px 15px 20px 15px;
   }
 `;
 
@@ -32,6 +33,13 @@ export default function Home(props: Vehicle) {
 
   return (
     <>
+      {/* <TextInput
+        value={searchValue}
+        label="filter by body"
+        onChange={(e) => {
+          setSearchValue(e.target.value);
+        }}
+      /> */}
       <SearchBoxContainer>       
         <StyledTextInput>
           <input

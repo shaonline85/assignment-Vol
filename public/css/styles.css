@@ -1,4 +1,79 @@
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+.navContainer {
+  display: flex;
+  justify-content: end;
+}
+
+.owl-next.disabled {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  background: white;
+  margin-right: 15px;
+  cursor: unset;
+  pointer-events: none;
+  color:#f1f1f1;
+}
+
+.owl-prev.disabled {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+  background: white;
+  margin-right: 15px;
+  cursor: unset;
+  pointer-events: none;
+  color:#f1f1f1;
+}
+
+.navContainer > button > span {
+  font-size: 18px;
+}
+
+.navContainer > button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #141414;
+  background: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.navContainer.disabled{
+  display:none;
+}
+
+.dotsClass {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.dotClass{
+  display: block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: opacity 0.3s ease-out;
+}
+
+.dotClass.active {
+  display: block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #928F8F;
+  background: #928F8F;
+  border-radius: 50%;
+  margin-right: 5px;
+  transition: opacity 0.3s ease-out;
+}
+
