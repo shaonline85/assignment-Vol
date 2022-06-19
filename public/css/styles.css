@@ -1,4 +1,4 @@
-html{
+html {
   height: 100%;
 }
 body {
@@ -8,8 +8,14 @@ body {
   flex-direction: column;
   min-height: 100%;
 }
-main{
-  flex-grow: 1;  
+main {
+  flex-grow: 1;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .navContainer {
@@ -26,7 +32,7 @@ main{
   margin-right: 15px;
   cursor: unset;
   pointer-events: none;
-  color:#f1f1f1;
+  color: #f1f1f1;
 }
 
 .owl-prev.disabled {
@@ -38,7 +44,7 @@ main{
   margin-right: 15px;
   cursor: unset;
   pointer-events: none;
-  color:#f1f1f1;
+  color: #f1f1f1;
 }
 
 .navContainer > button > span {
@@ -55,8 +61,8 @@ main{
   cursor: pointer;
 }
 
-.navContainer.disabled{
-  display:none;
+.navContainer.disabled {
+  display: none;
 }
 
 .dotsClass {
@@ -66,7 +72,7 @@ main{
   margin-left: 16%;
 }
 
-.dotClass{
+.dotClass {
   display: block;
   height: 14px;
   width: 14px;
@@ -81,10 +87,9 @@ main{
   display: block;
   height: 14px;
   width: 14px;
-  border: 1px solid #928F8F;
-  background: #928F8F;
+  border: 1px solid #928f8f;
+  background: #928f8f;
   border-radius: 50%;
   margin-right: 5px;
   transition: opacity 0.3s ease-out;
 }
-

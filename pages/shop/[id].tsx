@@ -12,8 +12,8 @@ const Content = styled.div`
 
 const Heading = styled.h1`
   color: #000;
-  font-size: 9rem;
-  font-weight: 800;
+  font-size: 2rem;
+  font-weight: 500;
 `;
 
 const Shop = () => {
