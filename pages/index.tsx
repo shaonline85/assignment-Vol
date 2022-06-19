@@ -20,7 +20,7 @@ const StyledTextInput = styled.div`
     width: 100%;
     border: 1px solid #d5d5d5;
     border-radius: 4px;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 0px 20px 5px;
   }
 `;
 

@@ -1,7 +1,17 @@
+html{
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
+main{
+  flex-grow: 1;  
+}
+
 .navContainer {
   display: flex;
   justify-content: end;
@@ -53,6 +63,7 @@ body {
   display: flex;
   justify-content: center;
   pointer-events: none;
+  margin-left: 16%;
 }
 
 .dotClass{

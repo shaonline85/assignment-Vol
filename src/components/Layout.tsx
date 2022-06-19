@@ -8,11 +8,11 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroBanner />
       <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
