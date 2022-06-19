@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { CardList } from "../src/components/CardList";
-
 import { CardType } from "../src/types";
 
 export interface Vehicle {
@@ -27,7 +26,7 @@ const StyledTextInput = styled.div`
 export default function Home(props: Vehicle) {
   const cars = props.cars;
   const [searchValue, setSearchValue] = useState<string>("");
-  const filteredCars = cars.filter((car) => car.bodyType.includes(searchValue));
+  const filteredCars = cars.filter((car) => car.bodyType.toLowerCase().includes(searchValue.toLowerCase()));
 
   return (
     <>
