@@ -42,6 +42,7 @@ export const ItemCard = ({ item }: ItemCardProps) => {
         quality={100}
         width="300px"
         height="223px"
+        priority={true}
       />
 
       <LinkContainer>
