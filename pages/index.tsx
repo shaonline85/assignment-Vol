@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
-import { FavIcons } from "@volvo-cars/favicons/react";
 import { CardList } from "../src/components/CardList";
+
 import { CardType } from "../src/types";
-import { TextInput } from "vcc-ui";
 
 export interface Vehicle {
   cars: CardType[];
@@ -27,20 +26,12 @@ const StyledTextInput = styled.div`
 
 export default function Home(props: Vehicle) {
   const cars = props.cars;
-  const isFetched = cars.length > 0;
   const [searchValue, setSearchValue] = useState<string>("");
   const filteredCars = cars.filter((car) => car.bodyType.includes(searchValue));
 
   return (
     <>
-      {/* <TextInput
-        value={searchValue}
-        label="filter by body"
-        onChange={(e) => {
-          setSearchValue(e.target.value);
-        }}
-      /> */}
-      <SearchBoxContainer>       
+      <SearchBoxContainer>
         <StyledTextInput>
           <input
             type="text"
@@ -52,7 +43,8 @@ export default function Home(props: Vehicle) {
           />
         </StyledTextInput>
       </SearchBoxContainer>
-      <CardList cards={filteredCars} isFetched={isFetched} />
+
+      <CardList cards={filteredCars} />
     </>
   );
 }

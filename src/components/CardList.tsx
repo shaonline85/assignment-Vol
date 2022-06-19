@@ -5,6 +5,7 @@ if (typeof window !== "undefined") {
 import styled from "styled-components";
 import { ItemCard } from "./ItemCard";
 import { CardType } from "../types";
+import { Text } from "vcc-ui";
 
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -44,11 +45,10 @@ const List = styled.div`
 `;
 
 interface CardListProps {
-  cards: CardType[];
-  isFetched: boolean;
+  cards: CardType[];  
 }
 
-export const CardList = ({ cards, isFetched }: CardListProps) => {
+export const CardList = ({ cards }: CardListProps) => {
   
   const responsive = {
     0: {
@@ -72,10 +72,10 @@ export const CardList = ({ cards, isFetched }: CardListProps) => {
     },
   };
 
-  if (!isFetched) {
+  if (cards.length < 1) {
     return (
       <ListContainer>
-        <List data-testid="loading">Loading...</List>
+        <Text data-testid="no result found">No result found</Text>
       </ListContainer>
     );
   }

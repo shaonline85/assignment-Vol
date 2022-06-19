@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Text, Link } from "vcc-ui";
 
 const Card = styled.div`
+cursor: pointer;
   &:hover {
     color: #1c6bba;
   }
@@ -30,9 +31,9 @@ export const ItemCard = ({ item }: ItemCardProps) => {
   return (
     <Card>
       <Text fg="#707070">{bodyType}</Text>
-      <Text>{modelName}</Text>
-      <Text>{modelType}</Text>
-
+      <Text subStyle="emphasis">{modelName}</Text>
+      <Text variant="bates">{modelType}</Text>
+      
       <Image
         src={imageUrl}
         alt={modelName}

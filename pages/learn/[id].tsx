@@ -12,8 +12,8 @@ const Content = styled.div`
 
 const Heading = styled.h1`
   color: #000;
-  font-size: 8rem;
-  font-weight: 900;
+  font-size: 2rem;
+  font-weight: 500;
 `;
 
 const Learn = () => {
@@ -27,7 +27,7 @@ const Learn = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Content>
-        <Heading>Learn {id}</Heading>
+        <Heading>Learn about {id}</Heading>
       </Content>
     </>
   );
