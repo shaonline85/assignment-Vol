@@ -27,7 +27,7 @@ const Navbar = () => {
       <NavItem>
         <Link href="/" passHref>
           <StyledLink>
-            <Logo type="spreadmark" height={16} />
+            <Logo type="spreadmark" height={8} />
           </StyledLink>
         </Link>
       </NavItem>
