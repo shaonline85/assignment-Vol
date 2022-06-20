@@ -54,6 +54,7 @@ const TextContent = styled.div`
   width: 35%;
   margin: 0 auto;
   padding: 20px;
+  text-align: center;
 `;
 
 interface CardListProps {
