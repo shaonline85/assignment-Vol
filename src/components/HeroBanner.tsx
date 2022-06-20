@@ -11,10 +11,11 @@ const Herobanner = styled.div.attrs((props: { imgUrl: string }) => props)`
   background-position: 50% 85%;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index:1;
 `;
 
 const HeroBanner = () => {
-  return <Herobanner imgUrl="images/hero.webp" />;
+  return <Herobanner imgUrl="/images/hero.webp" />;
 };
 
 export default HeroBanner;
